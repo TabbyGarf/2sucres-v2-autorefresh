@@ -31,7 +31,7 @@
     
         }
     }, timeInterval);
-
+    
     // Recherche du bouton sur le topic si vue mobile
     setInterval(function() {
         const button = document.querySelectorAll('button.btn.waves-effect.waves-ligh.jaune i.large.material-icons');
@@ -61,11 +61,4 @@
             button.click();
         }
     }, timeInterval);
-    
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("mousedown", function(event) {
-        // Block the mouseup event from happening
-        event.preventDefault();
-        });
-    }
 })();
