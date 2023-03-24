@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         2Sucres AutoRefresh V2
 // @namespace    http://tabbygarf.club
-// @version      1
+// @version      1.1
 // @description  Clicks buttons with specific innerTexts every set interval (default 10s)
 // @updateURL    https://github.com/TabbyGarf/2sucres-v2-autorefresh/raw/master/autorefreshV2.user.js
 // @downloadURL  https://github.com/TabbyGarf/2sucres-v2-autorefresh/raw/master/autorefreshV2.user.js
