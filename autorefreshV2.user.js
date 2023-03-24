@@ -3,8 +3,8 @@
 // @namespace    http://tabbygarf.club
 // @version      1
 // @description  Clicks buttons with specific innerTexts every set interval (default 10s)
-// @updateURL    https://github.com/sucresware/2sucres-auto-refresh/raw/master/2sucres-auto-refresh.user.js
-// @downloadURL  https://github.com/sucresware/2sucres-auto-refresh/raw/master/2sucres-auto-refresh.user.js
+// @updateURL    https://github.com/TabbyGarf/2sucres-v2-autorefresh/raw/master/autorefreshV2.user.js
+// @downloadURL  https://github.com/TabbyGarf/2sucres-v2-autorefresh/raw/master/autorefreshV2.user.js
 // @match        https://2sucres.org/*
 // @grant        none
 // ==/UserScript==
@@ -60,4 +60,10 @@
             button.click();
         }
     }, timeInterval);
+    
+    document.addEventListener('click', function(event) {
+        if (event.target.matches('button')) {
+            event.preventDefault();
+        }
+    });
 })();
