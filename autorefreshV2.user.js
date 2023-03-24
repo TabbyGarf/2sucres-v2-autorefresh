@@ -28,6 +28,7 @@
             if (buttonText === targetInnerText1 || buttonText === targetInnerText2) {
                 buttons[i].parentNode.click();
             }
+    
         }
     }, timeInterval);
 
@@ -61,9 +62,10 @@
         }
     }, timeInterval);
     
-    document.addEventListener('click', function(event) {
-        if (event.target.matches('button')) {
-            event.preventDefault();
-        }
-    });
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("mousedown", function(event) {
+        // Block the mouseup event from happening
+        event.preventDefault();
+        });
+    }
 })();
